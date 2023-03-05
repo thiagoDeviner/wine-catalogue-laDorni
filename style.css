@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  margin: 2em 0em 0em 0em;
+}
+
+.container {  display: grid;
+  grid-template-columns: 0.4fr 1fr 1fr 0.4fr;
+  grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo logo logo logo"
+    "searchBar searchBar searchBar searchBar"
+    "capitular1 vinho1 texto1 ."
+    ". texto2 vinho2 capitular2"
+    "capitular3 vinho3 texto3 ."
+    ". texto4 vinho4 capitular4";
+
+    justify-items: center;
+}
+
+.logo { 
+  grid-area: logo;
+}
+
+.logo img { 
+  grid-area: logo;
+  max-width: 10em;
+  margin: 2em 0em 2em 0em;
+  
+}
+
+.searchBar { 
+  grid-area: searchBar;
+}
+
+.searchBar input {
+  width: 10rem;
+  height: 2rem;
+}
+
+.capitular1 {
+  grid-area: capitular1;
+  font-size: 10rem;
+  opacity: 0.1;
+
+  align-items: start;
+}
+
+.capitular1 h1 {
+  grid-area: capitular1;
+  
+}
+
+.capitular2 {
+  grid-area: capitular2;
+  font-size: 10rem;
+  opacity: 0.1;
+}
+
+.capitular3 {
+  grid-area: capitular3;
+  font-size: 10rem;
+  opacity: 0.1;
+}
+
+.capitular3 h1 {
+  grid-area: capitular3;
+}
+
+.vinho1 { 
+  grid-area: vinho1; 
+}
+
+.texto1 { 
+  grid-area: texto1;
+  align-self: center;
+}
+
+.texto2 { 
+  grid-area: texto2;
+  align-self: center; 
+}
+
+.vinho2 { 
+  grid-area: vinho2;
+  align-self: center;
+
+}
+
+.vinho2 img{
+  align-self: center;
+  width: 100%;
+}
+
+.vinho3 {
+  grid-area: vinho3;
+  align-self: center;
+
+}
+
+.vinho3 img{
+  align-self: center;
+  width: 100%;
+}
+
+.texto3 {
+grid-area: texto3;
+align-self: center;
+}
+
+.vinho4 {
+  grid-area: vinho4;
+  align-self: center;
+
+}
+
+.vinho4 img{
+  align-self: center;
+  width: 100%;
+}
+
+.texto4 {
+grid-area: texto4;
+align-self: center;
+}
+
+.capitular4 {
+  grid-area: capitular4;
+  font-size: 10rem;
+  opacity: 0.1;
+}
